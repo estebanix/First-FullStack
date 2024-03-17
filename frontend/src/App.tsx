@@ -1,16 +1,19 @@
 import { Nav } from "./components/Nav"
-
+import { Route, Routes } from "react-router";
 import "./App.css";
-import { ContextBox } from "./components/ContentBox";
+
+import { HomePage } from "./containers/HomePage";
+import { ToDoPage } from "./containers/ToDoPage";
 
 function App() {
 
   return (
     <>
         <Nav />
-        <ContextBox>
-          <h1>Ahojkyy</h1>
-        </ContextBox>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/todo" element={<ToDoPage />} />
+        </Routes>
     </>
   )
 }
