@@ -1,5 +1,21 @@
 .nav_container {
     width: 100%;
     height: 50px;
-    background-color: aqua;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_ul {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+li{
+    cursor: pointer;
 }
