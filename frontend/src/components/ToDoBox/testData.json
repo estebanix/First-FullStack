@@ -1,0 +1,6 @@
+[
+    { "id": 1, "activity": "Go to the gym", "description": "Hit the gym for a workout session." },
+    { "id": 2, "activity": "Meal prep", "description": "Prepare healthy meals for the week ahead." },
+    { "id": 3, "activity": "Read a book", "description": "Spend some time reading a book you enjoy." },
+    { "id": 4, "activity": "Take a walk", "description": "Go for a leisurely walk in the park or neighborhood." }
+  ]
