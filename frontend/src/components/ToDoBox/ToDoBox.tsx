@@ -11,10 +11,14 @@ export const ToDoBox: React.FC = () => {
     setActivities(data);
   }, []);
 
+  const handleDelete = (id: number) => {
+    setActivities(activities.filter(item => item.id !== id));
+  };
+
   return (
     <div className={styles.toDoBox_container}>
       {activities.map((item) => (
-        <BoxItem key={item.id} act={item} />
+        <BoxItem key={item.id} act={item} onDelete={handleDelete} />
       ))}
     </div>
   );
