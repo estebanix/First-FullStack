@@ -1,15 +1,11 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { BoxItem } from "../BoxItem";
+
 import styles from "./ToDoBox.module.scss";
 import data from "./testData.json";
 
-export interface Activity {
-  id: number;
-  activity: string;
-  description: string;
-}
-
 export const ToDoBox: React.FC = () => {
-  const [activities, setActivities] = useState<Activity[]>([]);
+  const [activities, setActivities] = useState(data);
 
   useEffect(() => {
     setActivities(data);
@@ -18,7 +14,7 @@ export const ToDoBox: React.FC = () => {
   return (
     <div className={styles.toDoBox_container}>
       {activities.map((item) => (
-        <p key={item.id}>{item.activity}</p>
+        <BoxItem key={item.id} act={item} />
       ))}
     </div>
   );

@@ -1,0 +1,15 @@
+.boxItem_container{
+    width: 90%;
+    height: 4em;
+    border: 1px solid black;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boxItem_container:hover{
+    background-color: aquamarine;
+}
