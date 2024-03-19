@@ -11,5 +11,10 @@
 }
 
 .boxItem_container:hover{
-    background-color: aquamarine;
+    background-color: lightgray;
+}
+
+.active{
+    background-color: gray;
+    text-decoration: line-through;
 }
